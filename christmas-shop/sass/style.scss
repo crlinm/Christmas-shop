@@ -1,0 +1,42 @@
+// @import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "npm:@fontsource-variable/montserrat/wght.css";
+@import "npm:@fontsource/allura/400.css";
+
+@font-face {
+	font-family: AdobeNotDef;
+	src: url('./assets/fonts/AdobeNotDef/AND-Regular.otf');
+}
+
+:root {
+	--primary: #ff4646;
+	--dark: #181c29;
+	--static-white: #fff;
+	--content-background: #ecf3f8;
+	--tag-purple: #4361ff;
+	--tag-pink: #ff43f7;
+	--tag-green: #06a44f;
+	--primary-10: rgba(255, 70, 70, 0.1);
+	--static-white-20: rgba(255, 255, 255, 0.2);
+	--static-white-40: rgba(255, 255, 255, 0.4);
+}
+
+:root {
+    --font-family: "Montserrat Variable", "AdobeNotDef", sans-serif;
+    --second-family: "Allura", sans-serif;
+    --third-family: "SF Pro", sans-serif;
+}
+
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: var(--font-family);
+}
+
+.congratulation p{
+	font-family: var(--second-family);
+}
