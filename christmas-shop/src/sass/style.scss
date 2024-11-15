@@ -1,9 +1,11 @@
 
 @import "./abstract/constants";
 @import "./base/base";
+
+@import "./layouts/headers";
 @import "./layouts/wrapper";
 
-@import "./components/components";
+@import "./components/merry-christmas";
 
 @import 'npm:modern-normalize/modern-normalize.css';
 
@@ -14,5 +16,5 @@
 
 @font-face {
 	font-family: AdobeNotDef;
-	src: url('./assets/fonts/AdobeNotDef/AND-Regular.otf');
+	src: url('../assets/fonts/AdobeNotDef/AND-Regular.otf');
 }
