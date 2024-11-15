@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.1.0",
-    "@fontsource/allura": "^5.1.0"
+    "@fontsource/allura": "^5.1.0",
+    "modern-normalize": "^3.0.1"
   }
 }
