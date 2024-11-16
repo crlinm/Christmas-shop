@@ -1,0 +1,32 @@
+.gifts {
+    padding: 60px 8px;
+}
+
+.gifts__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: 82px;
+}
+
+.gifts__text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.gift__card {
+    display: flex;
+    flex-direction: column;
+    @extend %border_radius;
+    background: var(--content-background);
+
+    width: 310px;
+    height: 342px;
+}
+
+.layout-4-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
