@@ -1,13 +1,21 @@
 .button {
     border-radius: 20px;
     height: 56px;
+
+    cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 .link__gifts {
     padding: 20px 32px;
-    width: 235px;
+    // width: 235px;
     background: var(--dark);
     color: var(--static-white);
+}
+
+.link__gifts:hover {
+    background: var(--static-white);
+    color: var(--dark);
 }
 
 .button_arrow {
