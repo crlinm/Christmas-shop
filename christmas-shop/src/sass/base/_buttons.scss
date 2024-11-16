@@ -1,7 +1,6 @@
 .button {
-    border-radius: 20px;
-    height: 56px;
-
+    @extend %border_radius;
+    // border-radius: 20px;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }

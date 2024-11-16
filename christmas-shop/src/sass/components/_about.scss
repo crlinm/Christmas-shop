@@ -1,0 +1,33 @@
+.about {
+    padding: 60px 82px;
+}
+
+.about__block {
+    display: flex;
+    gap: 152px;
+    @extend %border_radius;
+    background: var(--static-white);
+    // padding: 100px 60px;
+
+    &>img {
+        @extend %border_radius;
+    }
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 160px 0 160px 60px;
+
+    &>.caption {
+        text-align: left;
+        color: var(--primary);
+    }
+
+    &>h2 {
+        text-align: left;
+        color: var(--dark);
+    }
+}
+
