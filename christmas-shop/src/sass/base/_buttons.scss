@@ -1,6 +1,5 @@
 .button {
     @extend %border_radius;
-    // border-radius: 20px;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
@@ -20,4 +19,6 @@
 .button_arrow {
     border: 1px solid var(--static-white);
     width: 56px;
+    height: 56px;
+    background-color: transparent;
 }
