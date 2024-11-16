@@ -10,7 +10,9 @@ body {
 
 .main {
     background-color: var(--primary);
-    background-image: url("../assets/img/backgrounds/bg-snow.png")
+    background-image: url("../assets/img/backgrounds/bg-snow.png");
+    border-radius: 20px 20px;
+    padding: 60px 8px;
 }
 
 ul {
@@ -22,7 +24,7 @@ a {
     color: inherit;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
     margin: 0;
     padding: 0;
 }
@@ -57,7 +59,9 @@ h2 {
     color: var(--static-white);
 }
 
-h3 {
+h3, .h3 {
+    display: block;
+
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;
@@ -68,7 +72,7 @@ h3 {
     color: var(--dark);
 }
 
-h4 {
+h4, .h4 {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 12px;
@@ -76,7 +80,7 @@ h4 {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     text-align: center;
-    color: var(--static-white);
+    // color: var(--static-white);
 }
 
 .caption {

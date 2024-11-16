@@ -1,5 +1,6 @@
 .header {
     background: var(--static-white);
+    padding: 12px 82px;
 }
 
 .logo-title{
@@ -24,7 +25,8 @@
     display: flex;
     column-gap: 8px;
 
-    & > ul {
+    li>a {
         padding: 12px 20px;
     }
 }
+
