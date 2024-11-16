@@ -10,10 +10,21 @@ body {
 
 .main {
     background-color: var(--primary);
+    background-image: url("../assets/img/backgrounds/bg-snow.png")
 }
 
 ul {
     list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -24,6 +35,10 @@ h1 {
     letter-spacing: 0.18em;
     text-transform: uppercase;
     text-align: center;
+    // color: var(--static-white);
+}
+
+.main h1 {
     color: var(--static-white);
 }
 
@@ -35,20 +50,14 @@ h2 {
     letter-spacing: 0.16em;
     text-transform: uppercase;
     text-align: center;
+    color: var(--dark);
+}
+
+.main h2 {
     color: var(--static-white);
 }
 
 h3 {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0.05em;
-    text-align: center;
-    color: var(--static-white);
-}
-
-h4 {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;
@@ -57,4 +66,25 @@ h4 {
     text-transform: uppercase;
     text-align: center;
     color: var(--dark);
+}
+
+h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--static-white);
+}
+
+.caption {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: var(--static-white);
 }
