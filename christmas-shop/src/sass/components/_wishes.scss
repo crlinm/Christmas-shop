@@ -1,0 +1,42 @@
+.wishes {
+    padding: 60px 8px;
+}
+
+
+.wishes__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wishes__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.wishes__slider {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    padding-inline: 76px;
+}
+
+.wish__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    img {
+        border-radius: 20px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.wishes__slider__buttons {
+    padding-inline: 76px;
+    text-align: right;
+}
