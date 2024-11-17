@@ -3,11 +3,7 @@
     padding: 12px 82px;
 }
 
-.logo-title{
-    color: var(--dark);
-}
-
-.logo{
+.logo {
     display: flex;
     flex-direction: row;
     column-gap: 8px;
@@ -15,21 +11,24 @@
     padding: 8px 20px;
 }
 
-.header__nav{
+.logo_title {
+    color: var(--dark);
+}
+
+.header__nav {
     display: grid;
     grid-template-columns: max-content 1fr max-content;
     align-items: center;
 }
 
-.navigation{
+.nav {
     display: flex;
     column-gap: 8px;
+}
 
-    li>a {
-        padding: 12px 20px;
-    }
-
-    li>a:hover {
+.nav__link {
+    padding: 12px 20px;
+    &:hover {
         background-color: var(--primary-10);
         color: var(--primary);
         border-radius: 12px;
