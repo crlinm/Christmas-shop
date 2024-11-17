@@ -37,6 +37,12 @@
 }
 
 .wishes__slider__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: right;
+    align-content: center;
+
     padding-inline: 76px;
-    text-align: right;
+    // text-align: right;
 }

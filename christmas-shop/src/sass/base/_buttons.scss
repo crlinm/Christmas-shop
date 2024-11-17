@@ -20,4 +20,18 @@
     width: 56px;
     height: 56px;
     background-color: transparent;
+
+    &_notallowed {
+        cursor: not-allowed;
+        border: 1px solid var(--static-white-40);
+    }
+
+    &_active:hover {
+        background-color: var(--static-white);
+
+        &>img {
+            stroke: var(--primary);
+            color: var(--primary);
+        }
+    }
 }

@@ -1,28 +1,48 @@
 .gifts {
-    padding: 60px 8px;
+    padding: 56px 8px;
 }
 
 .gifts__block {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding-inline: 82px;
+    gap: 16px;
+    padding-inline: 73px;
 }
 
 .gifts__text {
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    h2 {
+        padding-left: 4px;
+    }
 }
 
 .gift__card {
     display: flex;
     flex-direction: column;
     @extend %border_radius;
-    background: var(--content-background);
+    background: var(--static-white);
 
     width: 310px;
     height: 342px;
+
+    img {
+        background: var(--content-background);
+        border-radius: 20px 20px 0 0;
+    }
+}
+
+.cart__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 20px 44px 20px;
+
+    p {
+        text-align: left;
+    }
 }
 
 .layout-4-columns {
