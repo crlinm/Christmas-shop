@@ -55,3 +55,13 @@ footer {
 .footer_caption>a:hover {
     @extend %hover_text;
 }
+
+.social__item:hover {
+    stroke: var(--primary);
+}
+
+.social__item {
+    cursor: pointer;
+    @extend %transition;
+    stroke: var(--dark);
+}
