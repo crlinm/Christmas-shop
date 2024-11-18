@@ -11,7 +11,6 @@ body {
 
 .main {
     background-color: var(--primary);
-    background-image: url("../assets/img/backgrounds/bg-snow.png");
     border-radius: 20px 20px;
     // padding: 60px 8px;
     overflow: hidden;
@@ -43,7 +42,7 @@ h1 {
     color: var(--static-white);
 }
 
-h2 {
+h2, .h2 {
     @include font($size: 24px, $height: 1.52, $letter_spacing: 0.16em);
     text-transform: uppercase;
     text-align: center;

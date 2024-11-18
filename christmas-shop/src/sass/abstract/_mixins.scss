@@ -17,10 +17,6 @@
     gap: $gap;
 }
 
-// @mixin section_container() {
-//     padding: 60px 8px;
-// }
-
 @mixin main_block($width) {
     padding: 60px 0px;
     width: $width;

@@ -1,6 +1,6 @@
 .cta {
     @extend %section_container;
-    background-image: url("../assets/img/backgrounds/bg-forest.png");
+    background-image: url("../assets/img/backgrounds/bg-snow.png"), url("../assets/img/backgrounds/bg-forest.png");
     background-size: cover;
     // background-repeat: no-repeat;
     background-position: center;

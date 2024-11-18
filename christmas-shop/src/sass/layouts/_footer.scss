@@ -1,0 +1,43 @@
+footer {
+    @extend %section_container;
+}
+
+.contacts__wrapper {
+    @include columns($gap: 58px);
+    align-items: center;
+}
+
+.contacts {
+    @include flex-rows($gap: 12px);
+}
+
+.contact__item {
+    @include columns($gap: 12px);
+    align-items: center;
+    @extend %border_radius;
+    padding: 20px;
+    width: 417px;
+    background: var(--content-background);
+
+    .contact__img {
+        width: 80px;
+    }
+}
+
+.footer__links {
+    @include columns($gap: 10px);
+    align-items: center;
+}
+
+.socials__links {
+    @include flex-rows($gap: 12px);
+
+    .social__link_img {
+        width: 40px;
+        padding: 8px;
+    }
+}
+
+.footer_caption>a {
+    color: var(--dark);
+}
