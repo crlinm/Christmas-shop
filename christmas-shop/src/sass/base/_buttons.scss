@@ -18,10 +18,12 @@
 }
 
 .button_arrow {
+    display: flex;
     border: 1px solid var(--static-white);
     width: 56px;
     height: 56px;
     background-color: transparent;
+    padding: 19px;
 
     &_notallowed {
         cursor: not-allowed;
@@ -30,10 +32,20 @@
 
     &_active:hover {
         background-color: var(--static-white);
-
-        &>img {
+        .arrow-path-svg {
             stroke: var(--primary);
-            color: var(--primary);
         }
+    }
+}
+
+.arrow-svg {
+    .arrow-path-svg {
+        stroke: var(--static-white);
+    }
+}
+
+.arrow-svg:hover {
+    .arrow-path-svg {
+        stroke: var(--primary);
     }
 }

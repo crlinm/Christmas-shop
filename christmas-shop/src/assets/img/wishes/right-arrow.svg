@@ -1,3 +1,5 @@
-<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M1 7H13.5M13.5 7L7.5 1M13.5 7L7.5 13" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/css" href="../../../sass/style.scss"?>
+<svg class="arrow-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path class="arrow-path-svg" d="M1 7H13.5M13.5 7L7.5 1M13.5 7L7.5 13" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
