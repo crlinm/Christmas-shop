@@ -4,3 +4,24 @@
     line-height: $height;
     letter-spacing: $letter_spacing;
 }
+
+@mixin flex-rows($gap: 20px) {
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+}
+
+@mixin columns($gap: 20px) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+// @mixin section_container() {
+//     padding: 60px 8px;
+// }
+
+@mixin main_block($width) {
+    padding: 60px 0px;
+    width: $width;
+}

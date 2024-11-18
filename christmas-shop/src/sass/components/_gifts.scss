@@ -1,11 +1,9 @@
 .gifts {
-    padding: 56px 8px;
+    @extend %section_container;
 }
 
 .gifts__block {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    @include columns();
     padding-inline: 73px;
 }
 
@@ -26,7 +24,7 @@
     background: var(--static-white);
 
     width: 310px;
-    height: 342px;
+    // height: 342px;
 
     img {
         background: var(--content-background);
@@ -38,7 +36,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 20px 20px 44px 20px;
+    padding: 20px;
 
     p {
         text-align: left;

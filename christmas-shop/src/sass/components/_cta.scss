@@ -1,0 +1,42 @@
+.cta {
+    @extend %section_container;
+    background-image: url("../assets/img/backgrounds/bg-forest.png");
+    background-size: cover;
+    // background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cta__wrapper {
+    @extend %section_container;
+}
+
+.cta__block {
+    @include columns();
+    @include main_block($width: 426px);
+    align-items: center;
+}
+
+.cta__content {
+    @include columns();
+}
+
+.timer__wrapper {
+    @include columns($gap: 8px);
+}
+
+.timer {
+    @include flex-rows($gap: 0);
+    align-items: center;
+
+    @extend %border_radius;
+    background: var(--static-white-40);
+    padding: 8px 12px 12px 12px;
+}
+
+.timer__item {
+    width: 80px;
+}
+

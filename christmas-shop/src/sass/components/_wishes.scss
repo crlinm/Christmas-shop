@@ -16,18 +16,14 @@
 }
 
 .wishes__slider {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    @include flex-rows();
 
     padding-inline: 76px;
 }
 
 .wish__item {
-    display: flex;
-    flex-direction: row;
+    @include flex-rows();
     align-items: center;
-    gap: 20px;
 
     img {
         border-radius: 20px;
@@ -37,9 +33,7 @@
 }
 
 .wishes__slider__buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    @include flex-rows();
     justify-content: right;
     align-content: center;
 
