@@ -30,6 +30,8 @@
         background: var(--content-background);
         border-radius: 20px 20px 0 0;
     }
+
+    @extend %transition;
 }
 
 .gift__card:hover {
@@ -46,6 +48,18 @@
 
     p {
         text-align: left;
+    }
+}
+
+.gift__tag {
+    &_purpled {
+        color: var(--tag-purple);
+    }
+    &_greened {
+        color: var(--tag-green);
+    }
+    &_pinked {
+        color: var(--tag-pink);
     }
 }
 

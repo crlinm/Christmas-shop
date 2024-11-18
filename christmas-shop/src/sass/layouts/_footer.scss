@@ -22,6 +22,10 @@ footer {
     .contact__img {
         width: 80px;
     }
+
+    &>* {
+        @extend %transition;
+    }
 }
 
 .contact__item:hover {
