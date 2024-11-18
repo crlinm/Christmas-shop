@@ -25,11 +25,16 @@
     background: var(--static-white);
 
     width: 310px;
-    // height: 342px;
 
     img {
         background: var(--content-background);
         border-radius: 20px 20px 0 0;
+    }
+}
+
+.gift__card:hover {
+    .gift__name {
+        @extend %hover_text;
     }
 }
 

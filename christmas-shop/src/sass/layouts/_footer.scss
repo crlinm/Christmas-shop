@@ -24,6 +24,13 @@ footer {
     }
 }
 
+.contact__item:hover {
+
+    .h2, h3 {
+        @extend %hover_text;
+    }
+}
+
 .footer__links {
     @include columns($gap: 10px);
     align-items: center;
@@ -40,4 +47,8 @@ footer {
 
 .footer_caption>a {
     color: var(--dark);
+}
+
+.footer_caption>a:hover {
+    @extend %hover_text;
 }
