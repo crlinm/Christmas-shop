@@ -8,63 +8,6 @@
     padding-inline: 73px;
 }
 
-.gifts__text {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    h2 {
-        padding-left: 4px;
-    }
-}
-
-.gift__card {
-    display: flex;
-    flex-direction: column;
-    @extend %border_radius;
-    background: var(--static-white);
-
-    width: 310px;
-
-    img {
-        background: var(--content-background);
-        border-radius: 20px 20px 0 0;
-    }
-}
-
-.gift__name {
-    @extend %transition;
-}
-
-.gift__card:hover {
-    .gift__name {
-        @extend %hover_text;
-    }
-}
-
-.cart__content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 20px;
-
-    p {
-        text-align: left;
-    }
-}
-
-.gift__tag {
-    &_purpled {
-        color: var(--tag-purple);
-    }
-    &_greened {
-        color: var(--tag-green);
-    }
-    &_pinked {
-        color: var(--tag-pink);
-    }
-}
-
 .layout-4-columns {
     display: flex;
     flex-direction: row;

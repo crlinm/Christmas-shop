@@ -5,6 +5,7 @@
 
 @import "./base/base";
 @import "./base/buttons";
+@import "./base/card";
 
 @import "./layouts/headers";
 @import "./layouts/wrapper";
@@ -15,6 +16,8 @@
 @import "./components/wishes";
 @import "./components/gifts";
 @import "./components/cta";
+
+@import "./components/gifts2";
 
 @import 'npm:modern-normalize/modern-normalize.css';
 

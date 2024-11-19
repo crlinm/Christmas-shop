@@ -1,0 +1,36 @@
+.gifts2 {
+    @extend %section_container;
+    background-image: url("../assets/img/backgrounds/bg-garland.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.gifts__block {
+    @include columns();
+    padding-inline: 82px;
+    align-items: center;
+}
+
+.gifts__text {
+    width: 426px;
+}
+
+.gifts__tags {
+    @include flex-rows($gap: 8px);
+    color: var(--static-white);
+    margin: 0;
+    padding: 0;
+}
+
+.gift__tag {
+    border-radius: 12px;
+    padding: 12px 20px;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 12px;
+    row-gap: 12px;
+}
