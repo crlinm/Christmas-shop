@@ -25,6 +25,13 @@
 .gift__tag__filtr {
     border-radius: 12px;
     padding: 12px 20px;
+    @extend %transition;
+}
+
+.gift__tag__filtr:hover,
+.gift__tag__filtr__activated {
+    cursor: pointer;
+    background-color: var(--static-white-20);
 }
 
 .layout-grid {
