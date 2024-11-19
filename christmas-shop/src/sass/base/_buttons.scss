@@ -32,8 +32,16 @@
 }
 
 .arrow-svg {
+    fill: transparent;
     .arrow-path-svg {
         stroke: var(--static-white);
+    }
+    .arrow-rect-svg {
+        stroke: var(--static-white);
+    }
+    & * {
+        // transition: all 5s ease-out;
+        @extend %transition;
     }
 }
 
