@@ -26,15 +26,8 @@
     padding: 19px;
 
     &_notallowed {
-        cursor: not-allowed;
+        cursor: default;
         border: 1px solid var(--static-white-40);
-    }
-
-    &_active:hover {
-        background-color: var(--static-white);
-        .arrow-path-svg {
-            stroke: var(--primary);
-        }
     }
 }
 
@@ -47,5 +40,8 @@
 .arrow-svg:hover {
     .arrow-path-svg {
         stroke: var(--primary);
+    }
+    rect {
+        fill: var(--static-white);
     }
 }
