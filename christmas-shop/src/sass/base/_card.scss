@@ -12,12 +12,11 @@
     display: flex;
     flex-direction: column;
     @extend %border_radius;
-    background: var(--static-white);
+    background: var(--content-background);
 
     width: 310px;
 
     img {
-        background: var(--content-background);
         border-radius: 20px 20px 0 0;
     }
 }
@@ -33,10 +32,13 @@
 }
 
 .card__content {
+    @extend %border_radius;
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding: 20px;
+    background: var(--static-white);
+    height: 112px;
 
     p {
         text-align: left;
