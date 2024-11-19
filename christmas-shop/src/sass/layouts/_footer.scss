@@ -3,7 +3,7 @@ footer {
 }
 
 .contacts__wrapper {
-    @include columns($gap: 58px);
+    @include columns($gap: 68px);
     align-items: center;
 }
 
@@ -35,13 +35,13 @@ footer {
 }
 
 .footer__links {
-    @include columns($gap: 10px);
+    @include columns($gap: 13px);
     align-items: center;
 }
 
 .socials__links {
     @include flex-rows($gap: 12px);
-
+    align-items: center;
     .social__link_img {
         width: 40px;
         padding: 8px;
@@ -64,4 +64,5 @@ footer {
     cursor: pointer;
     @extend %transition;
     stroke: var(--dark);
+    width: 40px;
 }
