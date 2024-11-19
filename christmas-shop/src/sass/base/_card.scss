@@ -26,6 +26,7 @@
 }
 
 .gift__card:hover {
+    cursor: pointer;
     .gift__name {
         @extend %hover_text;
     }

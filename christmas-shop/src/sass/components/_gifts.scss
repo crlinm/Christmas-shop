@@ -1,6 +1,8 @@
 .gifts {
     @extend %section_container;
     background-image: url("../assets/img/backgrounds/bg-snow.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .gifts__block {
