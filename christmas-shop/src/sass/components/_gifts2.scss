@@ -3,6 +3,7 @@
     background-image: url("../assets/img/backgrounds/bg-garland.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: top;
 }
 
 .gifts__block {
@@ -30,7 +31,7 @@
 
 .gift__tag__filtr:hover,
 .gift__tag__filtr__activated {
-    cursor: default;
+    cursor: pointer;
     background-color: var(--static-white-20);
 }
 

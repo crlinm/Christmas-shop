@@ -40,12 +40,11 @@
         stroke: var(--static-white);
     }
     & * {
-        // transition: all 5s ease-out;
         @extend %transition;
     }
 }
 
-.arrow-svg:hover {
+.arrow-svg:not(disabled):hover {
     .arrow-path-svg {
         stroke: var(--primary);
     }
