@@ -17,18 +17,23 @@
     color: var(--dark);
 }
 
-.button_arrow {
-    display: flex;
-    border: 1px solid var(--static-white);
+// .button_arrow {
+//     display: flex;
+//     border: 1px solid var(--static-white);
+//     width: 56px;
+//     height: 56px;
+//     background-color: transparent;
+//     padding: 15px;
+
+//     &_notallowed {
+//         cursor: default;
+//         border: 1px solid var(--static-white-40);
+//     }
+// }
+
+.button_arrow2 {
     width: 56px;
     height: 56px;
-    background-color: transparent;
-    padding: 15px;
-
-    &_notallowed {
-        cursor: default;
-        border: 1px solid var(--static-white-40);
-    }
 }
 
 .arrow-svg {
@@ -41,6 +46,18 @@
     }
     & * {
         @extend %transition;
+    }
+}
+
+.button_arrow_notallowed {
+    .arrow-svg {
+        pointer-events: none;
+        .arrow-path-svg {
+            stroke: var(--static-white-40);
+        }
+        .arrow-rect-svg {
+            stroke: var(--static-white-40);
+        }
     }
 }
 

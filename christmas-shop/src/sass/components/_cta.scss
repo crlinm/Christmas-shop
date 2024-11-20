@@ -20,7 +20,7 @@
 }
 
 .cta__content {
-    @include columns();
+    @include columns($gap: 19px);
 }
 
 .timer__wrapper {
@@ -33,7 +33,7 @@
 
     @extend %border_radius;
     background: var(--static-white-40);
-    padding: 8px 12px 12px 12px;
+    padding: 8px 11px 12px 12px;
 }
 
 .timer__item {
