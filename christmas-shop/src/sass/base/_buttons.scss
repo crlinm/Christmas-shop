@@ -50,6 +50,7 @@
 }
 
 .button_arrow_notallowed {
+    cursor: default;
     .arrow-svg {
         pointer-events: none;
         .arrow-path-svg {
@@ -61,7 +62,8 @@
     }
 }
 
-.arrow-svg:not(disabled):hover {
+.arrow-svg:hover {
+    cursor: pointer;
     .arrow-path-svg {
         stroke: var(--primary);
     }
