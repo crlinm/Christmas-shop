@@ -1,0 +1,24 @@
+.burger-menu {
+    display: none;
+
+    @include media-tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    width: 40px;
+    height: 40px;
+
+    &>div{
+        border: 1px solid var(--dark);;
+        width: 22px;
+        height: 0px;
+    }
+
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+}

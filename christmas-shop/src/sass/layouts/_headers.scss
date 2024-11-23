@@ -26,6 +26,12 @@
     column-gap: 8px;
 }
 
+.nav {
+    @include media-tablet {
+        display: none;
+    }
+}
+
 .nav__link {
     padding: 12px 20px;
     &:hover {
