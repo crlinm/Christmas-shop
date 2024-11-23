@@ -16,25 +16,6 @@
     width: 426px;
 }
 
-.gifts__tags {
-    @include flex-rows($gap: 8px);
-    color: var(--static-white);
-    margin: 0;
-    padding: 0;
-}
-
-.gift__tag__filtr {
-    border-radius: 12px;
-    padding: 12px 20px;
-    @extend %transition;
-}
-
-.gift__tag__filtr:hover,
-.gift__tag__filtr__activated {
-    cursor: default;
-    background-color: var(--static-white-20);
-}
-
 .layout-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

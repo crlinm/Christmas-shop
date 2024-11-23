@@ -50,13 +50,6 @@ export class Gift {
         gift.append(cardContent);
 
         return gift;
-    // <div class="gift__card">
-    //     <img src="./src/assets/img/gifts/gift-for-work.png" alt="">
-    //     <div class="card__content">
-    //         <p class="h4 gift__tag gift__tag_purpled">For work</p>
-    //         <p class="h3 gift__name">Console.log Guru</p>
-    //     </div>
-    // </div>
     }
 }
 

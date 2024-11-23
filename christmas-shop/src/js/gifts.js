@@ -2,7 +2,7 @@ import {Gift} from './Gift.js';
 import {getGifts} from './utils.js';
 
 
-const GIFTS__BLOCK = document.querySelector(".layout-grid");
+const GIFTS_GRID = document.querySelector(".layout-grid");
 
 
 async function init() {
@@ -15,7 +15,7 @@ async function init() {
 
     for (let i = 0; i < cntGifts; i += 1) {
         const gift = new Gift(data[i]);
-        GIFTS__BLOCK.append(gift.createGift());
+        GIFTS_GRID.append(gift.createGift());
     }
 }
 
