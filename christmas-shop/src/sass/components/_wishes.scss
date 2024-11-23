@@ -1,5 +1,5 @@
 .wishes {
-    padding: 60px 8px;
+    @extend %section_container;
     background-image: url("../assets/img/backgrounds/bg-snow.png");
     background-size: cover;
     background-position: center;
