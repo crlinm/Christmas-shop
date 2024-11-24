@@ -7,19 +7,26 @@
 }
 
 .gifts__block {
-    @include columns();
-    padding-inline: 82px;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
+    // @include columns();
+    // padding-inline: 82px;
+    // align-items: stretch;
+    // align-items: center;
 }
 
-.gifts__text {
+.gifts__text{
+    align-items: center;
+    h1 {
     width: 426px;
+    }
 }
 
 .layout-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    // grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 310px);
+    justify-content: center;
     column-gap: 12px;
     row-gap: 12px;
 }

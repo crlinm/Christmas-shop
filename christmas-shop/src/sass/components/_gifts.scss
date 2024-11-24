@@ -8,11 +8,16 @@
 
 .gifts__block {
     @include columns();
-    padding-inline: 73px;
+    // padding-inline: 73px;
 }
 
+.gift_cards__columns,
 .layout-4-columns {
     display: flex;
     flex-direction: row;
     gap: 12px;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
 }

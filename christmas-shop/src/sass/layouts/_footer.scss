@@ -4,11 +4,19 @@ footer {
 
 .contacts__wrapper {
     @include columns($gap: 68px);
-    align-items: center;
+    // align-items: center;
 }
 
 .contacts {
     @include flex-rows($gap: 12px);
+    justify-content: center;
+
+    @include media-tablet {
+        display: grid;
+        grid-template-columns: 1fr;
+        // @include columns();
+        // align-items: stretch;
+    }
 }
 
 .contact__item {
@@ -25,6 +33,10 @@ footer {
 
     &>* {
         @extend %transition;
+    }
+
+    @include media-tablet {
+        width:auto;
     }
 }
 

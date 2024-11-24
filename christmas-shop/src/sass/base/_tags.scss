@@ -1,5 +1,6 @@
 .gifts__tags {
     @include flex-rows($gap: 8px);
+    justify-content: center;
     color: var(--static-white);
     margin: 0;
     padding: 0;
@@ -11,7 +12,11 @@
     @extend %transition;
 }
 
-.gift__tag__filtr:hover,
+.gift__tag__filtr:hover {
+    cursor: pointer;
+    background-color: var(--static-white-20);
+}
+
 .gift__tag__filtr__activated {
     cursor: default;
     background-color: var(--static-white-20);
