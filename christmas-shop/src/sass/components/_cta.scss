@@ -11,6 +11,10 @@
 
 .cta__wrapper {
     @extend %section_container;
+
+    @include media-mobile {
+        padding-inline: 0;
+    }
 }
 
 .cta__block {

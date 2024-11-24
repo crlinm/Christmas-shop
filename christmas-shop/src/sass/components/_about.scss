@@ -23,6 +23,15 @@
         height: 100%;
         object-fit: cover;
     }
+
+    @include media-mobile {
+        grid-template-columns: 1fr;
+
+        &>img {
+            height: auto;
+            aspect-ratio: 364 / 529;
+        }
+    }
 }
 
 .about__content {
@@ -48,6 +57,11 @@
     @include media-tablet {
         padding-block: 106px;
         padding-inline: 60px;
+    }
+
+    @include media-mobile {
+        padding-block: 60px;
+        padding-inline: 20px;
     }
 }
 

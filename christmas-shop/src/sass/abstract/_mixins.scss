@@ -19,7 +19,7 @@
 
 @mixin main_block($width) {
     padding: 60px 0px;
-    width: $width;
+    max-width: $width;
 }
 
 
