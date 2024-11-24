@@ -3,17 +3,25 @@
     padding: 60px 82px;
     background-size: cover;
     background-position: center;
+
+    @include media-tablet {
+        padding-inline: 8px;
+    }
 }
 
 .about__block {
-    display: flex;
-    gap: 152px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // gap: 152px;
     @extend %border_radius;
     background: var(--static-white);
     // padding: 100px 60px;
 
     &>img {
         @extend %border_radius;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -21,7 +29,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 160px 0 160px 60px;
+    // padding: 160px 152px 160px 60px;
+    padding-block: 160px;
+    padding-left: 60px;
+
+    max-width: 426px;
 
     &>.caption {
         text-align: left;
@@ -31,6 +43,11 @@
     &>h2 {
         text-align: left;
         color: var(--dark);
+    }
+
+    @include media-tablet {
+        padding-block: 106px;
+        padding-inline: 60px;
     }
 }
 
