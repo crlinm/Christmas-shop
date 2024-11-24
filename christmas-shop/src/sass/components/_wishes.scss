@@ -23,6 +23,10 @@
     @include flex-rows();
 
     padding-inline: 76px;
+
+    @include media-tablet {
+        padding-inline: 2px;
+    }
 }
 
 .wish__item {
@@ -43,4 +47,8 @@
 
     padding-inline: 76px;
     // text-align: right;
+
+    @include media-tablet {
+        padding-inline: 2px;
+    }
 }
