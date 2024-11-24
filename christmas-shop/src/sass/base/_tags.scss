@@ -4,12 +4,20 @@
     color: var(--static-white);
     margin: 0;
     padding: 0;
+
+    @include media-mobile {
+        @include flex-rows($gap: 0);
+    }
 }
 
 .gift__tag__filtr {
     border-radius: 12px;
     padding: 12px 20px;
     @extend %transition;
+
+    @include media-mobile {
+        padding: 12px 8px;
+    }
 }
 
 .gift__tag__filtr:hover {

@@ -19,7 +19,13 @@
 .gifts__text{
     align-items: center;
     h1 {
-    width: 426px;
+        max-width: 426px;
+    }
+
+    @include media-mobile {
+        h1 {
+            width: 364px;
+        }
     }
 }
 
