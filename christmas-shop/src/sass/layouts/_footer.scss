@@ -40,9 +40,12 @@ footer {
     }
 }
 
-.contact__item:hover {
-    .h2, h3 {
-        @extend %hover_text;
+@media (hover: hover) {
+    .contact__item:hover {
+        .h2, h3 {
+            cursor: pointer;
+            color: var(--primary);
+        }
     }
 }
 
@@ -64,12 +67,15 @@ footer {
     color: var(--dark);
 }
 
-.footer_caption>a:hover {
-    @extend %hover_text;
-}
+@media (hover: hover) {
+    .footer_caption>a:hover {
+        cursor: pointer;
+        color: var(--primary);
+    }
 
-.social__item:hover {
-    stroke: var(--primary);
+    .social__item:hover {
+        stroke: var(--primary);
+    }
 }
 
 .social__item {

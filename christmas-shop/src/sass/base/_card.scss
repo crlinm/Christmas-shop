@@ -25,10 +25,13 @@
     @extend %transition;
 }
 
-.gift__card:hover {
-    cursor: pointer;
-    .gift__name {
-        @extend %hover_text;
+@media (hover: hover) {
+    .gift__card:hover {
+        cursor: pointer;
+        .gift__name {
+            cursor: pointer;
+            color: var(--primary);
+        }
     }
 }
 

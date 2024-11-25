@@ -20,12 +20,14 @@
     }
 }
 
-.gift__tag__filtr:hover {
-    cursor: pointer;
-    background-color: var(--static-white-20);
+@media (hover: hover) {
+    .gift__tag__filtr_not_active:hover {
+        cursor: pointer;
+        background-color: var(--static-white-20);
+    }
 }
 
-.gift__tag__filtr__activated {
+.gift__tag__filtr_active {
     cursor: default;
     background-color: var(--static-white-20);
 }
