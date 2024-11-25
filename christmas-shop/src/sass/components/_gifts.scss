@@ -11,12 +11,23 @@
     // padding-inline: 73px;
 }
 
-.gift_cards__columns,
-.layout-4-columns {
-    display: flex;
-    flex-direction: row;
+.gift_cards__columns {
+    // display: flex;
+    // flex-direction: row;
+    // gap: 12px;
+    // flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 310px);
     gap: 12px;
-    flex-wrap: wrap;
+
+    @include media-laptop-small {
+        grid-template-columns: repeat(2, min-content);
+    }
+
+    @include media-tablet {
+        grid-template-columns: repeat(auto-fit, 310px);
+    }
 
     align-items: center;
     justify-content: center;
