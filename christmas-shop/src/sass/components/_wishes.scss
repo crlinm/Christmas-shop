@@ -22,7 +22,8 @@
 .wishes__slider {
     @include flex-rows();
 
-    padding-inline: 76px;
+    // padding-inline: 76px;
+    padding-inline: clamp(0.125rem, -5.1607rem + 11.0119vw, 4.75rem);
 
     @include media-tablet {
         padding-inline: 2px;

@@ -1,6 +1,9 @@
 .about {
     background-image: url("../assets/img/backgrounds/bg-snow.png");
-    padding: 60px 82px;
+    padding-block: 60px;
+    padding-inline: 82px;
+    padding-inline: clamp(0.5rem, -4.7857rem + 11.0119vw, 5.125rem);
+    // font-size: clamp(0.5rem, -4.7857rem + 11.0119vw, 5.125rem);
     background-size: cover;
     background-position: center;
 
@@ -30,6 +33,7 @@
         &>img {
             height: auto;
             aspect-ratio: 364 / 529;
+            height: 528px;
         }
     }
 }
@@ -39,7 +43,8 @@
     flex-direction: column;
     gap: 20px;
     // padding: 160px 152px 160px 60px;
-    padding-block: 160px;
+    // padding-block: 160px;
+    padding-block: clamp(6.625rem, 2.7679rem + 8.0357vw, 10rem);
     padding-left: 60px;
 
     max-width: 486px;
