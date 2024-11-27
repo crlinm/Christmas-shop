@@ -10,7 +10,7 @@
     }
 }
 
-.gift__tag__filtr {
+.tag__category {
     border-radius: 12px;
     padding: 12px 20px;
     @extend %transition;
@@ -21,13 +21,13 @@
 }
 
 @media (hover: hover) {
-    .gift__tag__filtr_not_active:hover {
+    .gift__tag__not_chosen:hover {
         cursor: pointer;
         background-color: var(--static-white-20);
     }
 }
 
-.gift__tag__filtr_active {
+.gift__tag__chosen {
     cursor: default;
     background-color: var(--static-white-20);
 }

@@ -1,7 +1,8 @@
 import {Gift} from './Gift.js';
 import {getGifts, randomIndex} from './utils.js';
 
-GIFTS_GRID_HOME = document.querySelector('.gift_cards__columns');
+const GIFTS_GRID_HOME = document.querySelector('.gift_cards__columns');
+
 const cntCards = 4;
 
 
