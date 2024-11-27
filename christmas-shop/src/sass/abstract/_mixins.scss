@@ -27,6 +27,10 @@
     @media (max-width: $laptop-width) { @content; }
 }
 
+@mixin media-laptop-average {
+    @media (max-width: $laptop-average-width) { @content; }
+}
+
 @mixin media-laptop-small {
     @media (max-width: $laptop-small-width) { @content; }
 }

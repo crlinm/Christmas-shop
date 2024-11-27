@@ -21,7 +21,7 @@
     grid-template-columns: repeat(auto-fit, 310px);
     gap: 12px;
 
-    @include media-laptop-small {
+    @include media-laptop-average {
         grid-template-columns: repeat(2, min-content);
     }
 
