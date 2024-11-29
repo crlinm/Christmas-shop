@@ -56,5 +56,26 @@
 }
 
 .modal__superpowers {
+    @include columns(8px);
 
+    .h4 {
+        text-align: left;
+    }
+    .superpowers__list {
+        display: grid;
+        grid-template-columns: 1fr min-content max-content;
+        column-gap: 12px;
+    }
+}
+
+.snowlflakes {
+    @include flex-rows(8px);
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.transparent {
+    opacity: 0.1;
 }

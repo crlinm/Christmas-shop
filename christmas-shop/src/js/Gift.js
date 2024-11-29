@@ -1,4 +1,9 @@
+import svg from "bundle-text:../assets/img/gifts/snow-power.svg";
+const svgSnowflakes = new URL("../assets/img/gifts/snow-power.svg", import.meta.url).toString();
+
 const modalGift = document.querySelector('.modal__gift');
+const nSnowlflakes = 5;
+
 modalGift.addEventListener("click", (e) => closePopup(e));
 
 const imgs = {
@@ -109,19 +114,37 @@ export class Gift {
 
         const superpowersText = document.createElement('p');
         superpowersText.textContent= 'Adds superpowers to:';
-
-        const live = document.createElement('div');
-        // live.classList.add();
-        live.textContent = 'Live';
-
-        // "superpowers": {
-        //     "live": "+100",
-        //     "create": "+400",
-        //     "love": "+200",
-        //     "dream": "+300"
-        //     }
+        superpowersText.classList.add('h4');
         modalSuperpowers.append(superpowersText);
-        modalSuperpowers.append(live);
+
+        const modalSuperpowersList = document.createElement('div');
+        modalSuperpowersList.classList.add('superpowers__list');
+
+        for (const [key, value] of Object.entries(this.superpowers)){
+            const power = document.createElement('p');
+            power.textContent = key[0].toUpperCase() + key.slice(1);;
+
+            const powerValue = document.createElement('p');
+            powerValue.textContent = value;
+
+            const snowflakes = document.createElement('div');
+            snowflakes.classList.add('snowlflakes');
+            snowflakes.innerHTML = '';
+            // snowflakes.innerHTML = svg;
+            const cntSnow = Number(value.slice(1))/100;
+            for (let i = 0; i < nSnowlflakes; i += 1) {
+                snowflakes.innerHTML += `<img src="${svgSnowflakes}" alt=' '>`;
+                if (i >= cntSnow) {
+                    snowflakes.querySelector('img:last-child').classList.add('transparent');
+                }
+            }
+
+            modalSuperpowersList.append(power)
+            modalSuperpowersList.append(powerValue);
+            modalSuperpowersList.append(snowflakes);
+        }
+
+        modalSuperpowers.append(modalSuperpowersList);
 
         modalText.append(modalSuperpowers);
 

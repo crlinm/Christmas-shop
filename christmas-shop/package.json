@@ -8,6 +8,7 @@
     "build": "parcel build --cache-dir .parcel-build-cache --public-url /crlinm-JSFE2024Q4/christmas-shop/"
   },
   "devDependencies": {
+    "@parcel/transformer-inline-string": "2.13.0",
     "@parcel/transformer-sass": "2.13.0",
     "parcel": "^2.13.0",
     "svgo": "^3"
