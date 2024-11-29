@@ -1,0 +1,60 @@
+
+.modal__gift {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: var(--overlay);
+
+    z-index: 10;
+
+}
+
+.modal__content {
+    @extend %border_radius;
+
+    // width: 400px;
+    height: 514px;
+    max-width: 400px;
+    background: var(--content-background);
+
+    display: flex;
+    flex-direction: column;
+
+    img {
+        object-fit: cover;
+        width: 400px;
+        height: 230px;
+    }
+}
+
+.modal__text {
+    @include columns();
+    @extend %border_radius;
+    height: 284px;
+    padding: 20px;
+
+    background: var(--static-white);
+}
+
+.modal__description {
+    @include columns(8px);
+    align-items: start;
+}
+
+.description {
+    @include font($size: 16px, $height: 1.48, $weight: 400);
+    font-family: var(--font-family);
+    color: var(--dark);
+}
+
+.modal__superpowers {
+
+}

@@ -12,7 +12,6 @@ body {
 .main {
     background-color: var(--primary);
     border-radius: 20px 20px;
-    // padding: 60px 8px;
     overflow: hidden;
 }
 
@@ -35,7 +34,6 @@ h1 {
     @include font($size: 32px, $height: 1.5, $letter_spacing: 0.18em);
     text-transform: uppercase;
     text-align: center;
-    // color: var(--static-white);
 }
 
 .main h1 {
@@ -65,7 +63,6 @@ h4, .h4 {
     @include font($size: 12px, $height: 1.3, $letter_spacing: 0.05em);
     text-transform: uppercase;
     text-align: center;
-    // color: var(--static-white);
 }
 
 p {
@@ -99,4 +96,8 @@ p {
     text-transform: uppercase;
     text-align: center;
     color: var(--static-white);
+}
+
+.shadow {
+    overflow-y: hidden;
 }

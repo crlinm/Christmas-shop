@@ -6,6 +6,7 @@
 @import "./base/base";
 @import "./base/buttons";
 @import "./base/card";
+@import "./base/modal_card";
 @import "./base/tags";
 @import "./base/burger";
 
@@ -31,4 +32,8 @@
 @font-face {
 	font-family: AdobeNotDef;
 	src: url('../assets/fonts/AdobeNotDef/AND-Regular.otf');
+}
+
+.hidden {
+	display: none;
 }
