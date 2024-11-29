@@ -19,6 +19,7 @@
 
 .modal__content {
     @extend %border_radius;
+    position: relative;
 
     // width: 400px;
     height: 514px;
@@ -74,8 +75,22 @@
         width: 16px;
         height: 16px;
     }
+    // p::first-letter {
+    //     text-transform: capitalize;
+    // }
 }
 
 .transparent {
     opacity: 0.1;
+}
+
+.popup-btn-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
 }

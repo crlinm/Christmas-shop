@@ -1,5 +1,6 @@
-import svg from "bundle-text:../assets/img/gifts/snow-power.svg";
+// import svg from "bundle-text:../assets/img/gifts/snow-power.svg";
 const svgSnowflakes = new URL("../assets/img/gifts/snow-power.svg", import.meta.url).toString();
+const svgCross = new URL("../assets/img/gifts/modal-cross.svg", import.meta.url).toString();
 
 const modalGift = document.querySelector('.modal__gift');
 const nSnowlflakes = 5;
@@ -22,10 +23,13 @@ const imgs = {
 }
 
 
-function closePopup() {
-    modalGift.classList.toggle("hidden");
-    document.body.classList.toggle("shadow");
-    modalGift.textContent = '';
+function closePopup(event) {
+    console.log(event.target, event.currentTarget);
+    if (event.target == event.currentTarget){
+        modalGift.classList.toggle("hidden");
+        document.body.classList.toggle("shadow");
+        modalGift.textContent = '';
+    }
 }
 
 
@@ -122,7 +126,7 @@ export class Gift {
 
         for (const [key, value] of Object.entries(this.superpowers)){
             const power = document.createElement('p');
-            power.textContent = key[0].toUpperCase() + key.slice(1);;
+            power.textContent = key[0].toUpperCase() + key.slice(1).toLowerCase();
 
             const powerValue = document.createElement('p');
             powerValue.textContent = value;
@@ -148,8 +152,21 @@ export class Gift {
 
         modalText.append(modalSuperpowers);
 
+        const btnClose = document.createElement('div');
+        btnClose.classList.add('popup-btn-close');
+        btnClose.innerHTML = '';
+        btnClose.innerHTML += `<img src="${svgCross}" alt=' '>`;
+
         modalContent.append(img);
         modalContent.append(modalText);
+        modalContent.append(btnClose);
+
+        btnClose.addEventListener("click", (event) => {
+            modalGift.classList.toggle("hidden");
+            document.body.classList.toggle("shadow");
+            modalGift.textContent = '';
+        });
+
 
         modalGift.append(modalContent);
 
