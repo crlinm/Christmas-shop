@@ -2,7 +2,7 @@
 const svgSnowflakes = new URL("../assets/img/gifts/snow-power.svg", import.meta.url).toString();
 const svgCross = new URL("../assets/img/gifts/modal-cross.svg", import.meta.url).toString();
 
-const modalGift = document.querySelector('.modal__gift');
+const modalGift = document.querySelector('.modal__overlay');
 const nSnowlflakes = 5;
 
 modalGift.addEventListener("click", (e) => closePopup(e));
@@ -26,8 +26,8 @@ const imgs = {
 function closePopup(event) {
     console.log(event.target, event.currentTarget);
     if (event.target == event.currentTarget){
-        modalGift.classList.toggle("hidden");
-        document.body.classList.toggle("shadow");
+        modalGift.classList.remove("visible");
+        document.body.classList.remove("shadow");
         modalGift.textContent = '';
     }
 }
@@ -75,10 +75,11 @@ export class Gift {
     }
 
     fillPopup(){
-        modalGift.classList.toggle('hidden');
 
         const modalContent = document.createElement('div');
         modalContent.classList.add('modal__content');
+
+        console.log('modalContent', modalContent)
 
         const modalText = document.createElement('div');
         modalText.classList.add('modal__text');
@@ -162,15 +163,17 @@ export class Gift {
         modalContent.append(btnClose);
 
         btnClose.addEventListener("click", (event) => {
-            modalGift.classList.toggle("hidden");
-            document.body.classList.toggle("shadow");
+            modalGift.classList.remove("visible");
+            document.body.classList.remove("shadow");
             modalGift.textContent = '';
         });
 
 
         modalGift.append(modalContent);
 
-        document.body.classList.toggle("shadow");
+        setTimeout(() => modalGift.classList.add('visible'), 0);
+
+        document.body.classList.add("shadow");
 
         return modalGift;
     }
