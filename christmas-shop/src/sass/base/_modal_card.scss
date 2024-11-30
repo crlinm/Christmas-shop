@@ -22,7 +22,7 @@
     position: relative;
 
     // width: 400px;
-    height: 514px;
+    min-height: 514px;
     max-width: 400px;
     background: var(--content-background);
 
@@ -31,15 +31,23 @@
 
     img {
         object-fit: cover;
-        width: 400px;
-        height: 230px;
+        max-width: 400px;
+        max-height: 230px;
+    }
+
+    @include media-tablet {
+        max-width: clamp(22.75rem, 20.5464rem + 9.2784vw, 25rem);
+    }
+
+    @include media-mobile {
+        max-width: 364px;
     }
 }
 
 .modal__text {
     @include columns();
     @extend %border_radius;
-    height: 284px;
+    min-height: 284px;
     padding: 20px;
 
     background: var(--static-white);
