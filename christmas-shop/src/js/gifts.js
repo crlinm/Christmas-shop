@@ -10,19 +10,19 @@ async function clickTag(e) {
     console.log(e, e.target.innerText);
     if (e.target.classList.contains('tag__category')) {
         const currentTag = e.target;
-        console.log(currentTag);
+        // console.log(currentTag);
         clearChosenTags();
         currentTag.classList.add('gift__tag__chosen');
 
         giftChosen = await showGiftsByTag(currentTag.innerText);
-        console.log(giftChosen);
+        // console.log(giftChosen);
         showGifts(giftChosen);
     }
 }
 
 const clearChosenTags = () => {
     const tags = document.querySelectorAll(".tag__category");
-    console.log(tags);
+    // console.log(tags);
     tags.forEach(tag => {
         tag.classList.remove('gift__tag__chosen');
         tag.classList.add('gift__tag__not_chosen');

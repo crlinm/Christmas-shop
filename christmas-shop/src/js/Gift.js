@@ -24,7 +24,7 @@ const imgs = {
 
 
 function closePopup(event) {
-    console.log(event.target, event.currentTarget);
+    // console.log(event.target, event.currentTarget);
     if (event.target == event.currentTarget){
         modalGift.classList.remove("visible");
         document.body.classList.remove("shadow");
@@ -79,7 +79,7 @@ export class Gift {
         const modalContent = document.createElement('div');
         modalContent.classList.add('modal__content');
 
-        console.log('modalContent', modalContent)
+        // console.log('modalContent', modalContent)
 
         const modalText = document.createElement('div');
         modalText.classList.add('modal__text');
