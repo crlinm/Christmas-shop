@@ -1,5 +1,6 @@
 import {Gift} from './Gift.js';
 import {getGifts} from './utils.js';
+import {menuOpen} from './burger.js';
 
 
 const GIFTS_GRID = document.querySelector(".layout-grid");

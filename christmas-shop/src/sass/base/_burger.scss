@@ -17,10 +17,20 @@
         border: 1px solid var(--dark);
         width: 22px;
         height: 0px;
+        transition: all 0.3s ease-in-out;
     }
 
     z-index: 10;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.burger-btn.burger-cross {
+    &>div:first-child {
+        transform: translateY(5px) rotate(-135deg);
+    }
+    &>div:last-child {
+        transform: translateY(-4px) rotate(135deg);
+    }
 }
 
 .nav.menu-open {

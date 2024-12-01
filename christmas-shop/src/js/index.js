@@ -1,10 +1,9 @@
 import {Gift} from './Gift.js';
 import {getGifts, randomIndex} from './utils.js';
+import {menuOpen} from './burger.js';
+
 
 const GIFTS_GRID_HOME = document.querySelector('.gift_cards__columns');
-const MENU = document.querySelector('.nav');
-const MENU_LI = document.querySelector('.nav>li');
-const BURGER_BTN = document.querySelector('.burger-btn');
 
 const cntCards = 4;
 
@@ -24,17 +23,3 @@ async function init() {
 
 init();
 
-BURGER_BTN.addEventListener("click", (e) => {
-    // console.log(e);
-    MENU.classList.toggle('menu-open');
-    MENU.classList.remove('h4');
-    MENU.classList.add('h2');
-})
-
-MENU_LI.addEventListener("click", (e) => {
-    if (e.target == e.currentTarget) {
-        MENU.classList.toggle('menu-open');
-        MENU.classList.remove('h2');
-        MENU.classList.add('h4');
-    }
-})
