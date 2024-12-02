@@ -8,22 +8,19 @@ const GIFTS_TAGS = document.querySelector('.gifts__tags');
 
 
 async function clickTag(e) {
-    console.log(e, e.target.innerText);
+    // console.log(e, e.target.innerText);
     if (e.target.classList.contains('tag__category')) {
         const currentTag = e.target;
-        // console.log(currentTag);
         clearChosenTags();
         currentTag.classList.add('gift__tag__chosen');
 
         const giftChosen = await showGiftsByTag(currentTag.innerText);
-        // console.log(giftChosen);
         showGifts(giftChosen);
     }
 }
 
 const clearChosenTags = () => {
     const tags = document.querySelectorAll(".tag__category");
-    // console.log(tags);
     tags.forEach(tag => {
         tag.classList.remove('gift__tag__chosen');
         tag.classList.add('gift__tag__not_chosen');
@@ -45,7 +42,6 @@ async function showGiftsByTag(value) {
             res.push(gift);
         }
     }
-    console.log(res);
     return res;
 }
 

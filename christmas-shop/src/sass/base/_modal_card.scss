@@ -17,7 +17,7 @@
     opacity: 0;
     visibility: hidden;
 
-    // z-index: 10;
+    z-index: 100;
 
     &.visible {
         opacity: 1;
