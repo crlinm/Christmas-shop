@@ -15,7 +15,7 @@ async function clickTag(e) {
         clearChosenTags();
         currentTag.classList.add('gift__tag__chosen');
 
-        giftChosen = await showGiftsByTag(currentTag.innerText);
+        const giftChosen = await showGiftsByTag(currentTag.innerText);
         // console.log(giftChosen);
         showGifts(giftChosen);
     }
