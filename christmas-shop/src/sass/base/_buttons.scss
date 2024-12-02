@@ -75,3 +75,29 @@
         }
     }
 }
+
+.scroll-to-top-btn {
+    border: 1px solid var(--primary);
+    border-radius: 100px;
+    width: 56px;
+    height: 56px;
+    background: var(--static-white);
+
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    img {
+        padding: 15px;
+        text-align: center;
+        vertical-align: auto;
+    }
+
+    @include media-scroll-to-top {
+        visibility: visible;
+        opacity: 1;
+    }
+}

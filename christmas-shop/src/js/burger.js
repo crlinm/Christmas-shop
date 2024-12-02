@@ -5,7 +5,6 @@ const BURGER_BTN = document.querySelector('.burger-btn');
 
 
 BURGER_BTN.addEventListener("click", (e) => {
-    console.log('BURGER_BTN');
     menuOpen(e, true);
 })
 

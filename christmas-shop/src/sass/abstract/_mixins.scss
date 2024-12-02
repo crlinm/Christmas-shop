@@ -42,3 +42,9 @@
 @mixin media-mobile {
     @media (max-width: $mobile-width) { @content; }
 }
+
+@mixin media-scroll-to-top {
+    @media (max-width: $tablet-width) and (min-height: $scroll-heigth) {
+        @content;
+    }
+}
