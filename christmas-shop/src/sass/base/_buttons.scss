@@ -89,15 +89,19 @@
 
     visibility: hidden;
     opacity: 0;
+    transform: scale(0);
+
+    @extend %transition;
 
     img {
         padding: 15px;
         text-align: center;
         vertical-align: auto;
     }
+}
 
-    @include media-scroll-to-top {
-        visibility: visible;
-        opacity: 1;
-    }
+.scroll-to-top-btn.show {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
 }
