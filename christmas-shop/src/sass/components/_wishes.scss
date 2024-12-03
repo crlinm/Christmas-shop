@@ -25,7 +25,8 @@
     // padding-inline: 76px;
     position: relative;
     padding-inline: clamp(0.125rem, -5.1607rem + 11.0119vw, 4.75rem);
-    @extend %transition;
+    // @extend %transition;
+    transition: all 0.5s ease-out;
 
     @include media-tablet {
         padding-inline: 2px;
