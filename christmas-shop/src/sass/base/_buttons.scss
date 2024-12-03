@@ -19,7 +19,7 @@
     }
 }
 
-// .button_arrow {
+// .button_arrow_old {
 //     display: flex;
 //     border: 1px solid var(--static-white);
 //     width: 56px;
@@ -33,7 +33,7 @@
 //     }
 // }
 
-.button_arrow2 {
+.button_arrow {
     width: 56px;
     height: 56px;
 }
@@ -51,12 +51,14 @@
     }
 }
 
-.button_arrow_notallowed {
+.button_arrow.not_active {
     cursor: default;
+    pointer-events: none;
+
     .arrow-svg {
-        pointer-events: none;
         .arrow-path-svg {
             stroke: var(--static-white-40);
+            // stroke-opacity: 0.6;
         }
         .arrow-rect-svg {
             stroke: var(--static-white-40);
