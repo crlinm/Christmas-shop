@@ -72,10 +72,13 @@ GIFTS_TAGS.addEventListener("click", (e) => clickTag(e));
 
 const SCROLL_BTN = document.querySelector('.scroll-to-top-btn');
 
-window.addEventListener('scroll', () => {
+function checkScrollToTopBtn () {
     if (window.scrollY >= 300 && window.innerWidth <= 768) {
         SCROLL_BTN.classList.add('show');
     } else {
         SCROLL_BTN.classList.remove('show');
     }
-})
+}
+
+window.addEventListener('scroll', checkScrollToTopBtn)
+window.addEventListener('resize', checkScrollToTopBtn)
