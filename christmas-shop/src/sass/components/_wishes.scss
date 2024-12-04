@@ -21,6 +21,7 @@
 
 .wishes__slider {
     @include flex-rows();
+    left: 0;
 
     // padding-inline: 76px;
     position: relative;
