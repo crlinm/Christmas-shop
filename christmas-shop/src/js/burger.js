@@ -5,16 +5,16 @@ const BURGER_BTN = document.querySelector('.burger-btn');
 
 
 BURGER_BTN.addEventListener("click", (e) => {
-    menuOpen(e, true);
+    menuOpen(e);
 })
 
 for (const MENU_LI of MENU_LI_s){
     MENU_LI.addEventListener("click", (e) => {
-        menuOpen(e, false);
+        menuOpen(e);
     })
 }
 
-export function menuOpen(e, f) {
+export function menuOpen(e) {
     MENU.classList.toggle('menu-open');
     MENU.classList.toggle('h2');
     MENU.classList.toggle('h4');
@@ -25,6 +25,6 @@ export function menuOpen(e, f) {
 window.addEventListener("resize", (e) => {
     const w = window.innerWidth;
     if (w > 768 && MENU.classList.contains('menu-open')) {
-        menuOpen(e, false);
+        menuOpen(e);
     }
 })
