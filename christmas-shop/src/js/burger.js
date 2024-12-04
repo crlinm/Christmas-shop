@@ -24,15 +24,12 @@ export function menuOpen(e, f) {
         BURGER_BTN.classList.add('burger-cross');
         isOpen = true;
     } else {
-        console.log('else', e.target, e.currentTarget);
-        if (e.target == e.currentTarget) {
-            MENU.classList.remove('menu-open');
-            MENU.classList.add('h4');
-            MENU.classList.remove('h2');
-            document.body.classList.remove("shadow");
-            BURGER_BTN.classList.remove('burger-cross');
-            isOpen = false;
-        }
+        MENU.classList.remove('menu-open');
+        MENU.classList.add('h4');
+        MENU.classList.remove('h2');
+        document.body.classList.remove("shadow");
+        BURGER_BTN.classList.remove('burger-cross');
+        isOpen = false;
     }
 }
 
