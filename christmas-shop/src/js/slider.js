@@ -42,7 +42,7 @@ function getShift() {
         nClicks = 6;
     }
     const sliderWidth = SLIDER.clientWidth;
-    return Math.round((SLIDER.scrollWidth - sliderWidth + Math.round((widthScreen - sliderWidth) / 2)) / nClicks);
+    return Math.round((SLIDER.scrollWidth - sliderWidth + Math.round((widthScreen - sliderWidth))) / nClicks);
 }
 
 window.addEventListener("resize", (e) => {
@@ -54,6 +54,9 @@ window.addEventListener('resize', resetSlider);
 
 function resetSlider() {
     SLIDER.style.left = '0';
+    currentShift = 0;
+    currentClick = 0;
+    nClicks = 0;
     LEFT_BTN.classList.add('not_active');
     RIGHT_BTN.classList.remove('not_active');
 }
