@@ -23,6 +23,7 @@ export function menuOpen(e, f) {
         document.body.classList.add("shadow");
         BURGER_BTN.classList.add('burger-cross');
         isOpen = true;
+        window.scrollTo(0, 0);
     } else {
         MENU.classList.remove('menu-open');
         MENU.classList.add('h4');
